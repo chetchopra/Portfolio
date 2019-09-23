@@ -199,11 +199,11 @@ export default class StickyLayout extends Component {
         <Container >
 
           <Switch>
+            <Route path='/' render={null} />
             <Route path='/about' render={props => <About {...props} />} />
             <Route path='/resume' render={props => <Resume {...props} />} />
             <Route path='/projects' render={props => <Project {...props} />} />
-            
-            <Redirect from='*' to='/about' />
+  
           </Switch>
          
         </Container>
