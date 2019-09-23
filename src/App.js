@@ -182,9 +182,9 @@ export default class StickyLayout extends Component {
 
           >
             <Container text>
-              <Menu.Item as={NavLink}  to='/about' activeClassName='active'>About</Menu.Item>
-              <Menu.Item as={NavLink}  to='/projects' activeClassName='active'>Projects</Menu.Item>
-              <Menu.Item as={NavLink}  to='/resume' activeClassName='active'>Resume</Menu.Item>
+              <Menu.Item as={NavLink} to='/about' activeClassName='active'>About</Menu.Item>
+              <Menu.Item as={NavLink} to='/projects' activeClassName='active'>Projects</Menu.Item>
+              <Menu.Item as={NavLink} to='/resume' activeClassName='active'>Resume</Menu.Item>
 
               {/* {menuFixed ? <Menu.Item><Icon name='github'/></Menu.Item> : ""} */}
             </Container>
@@ -199,11 +199,9 @@ export default class StickyLayout extends Component {
         <Container >
 
           <Switch>
-            {/* <Route path='/' exact render={null} /> */}
-            
-            <Route path='/about'  render={props => <About {...props} />} />
-            <Route path='/resume'  render={props => <Resume {...props} />} />
-            <Route path='/projects'  render={props => <Project {...props} />} />
+            <Route path='/about' render={props => <About {...props} />} />
+            <Route path='/resume' render={props => <Resume {...props} />} />
+            <Route path='/projects' render={props => <Project {...props} />} />
             
             <Redirect from='*' to='/about' />
           </Switch>
