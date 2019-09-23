@@ -6,6 +6,8 @@ import OptionMenu from './components/OptionMenu'
 import SocialAnimated from './components/SocialAnimated'
 import Project from './components/Project'
 
+import Cringe from './assets/cringe.jpg'
+
 import {
   Container,
   Divider,
@@ -147,7 +149,7 @@ export default class StickyLayout extends Component {
         <Container  style={{ marginTop: '2em' }}>
           <Grid>
             <Grid.Column width={4}>
-              <Image src='https://www.w3schools.com/howto/img_avatar.png' size='medium' circular />
+              <Image src={Cringe} size='medium' circular />
             </Grid.Column>
             <Grid.Column width={12}>
               <Header as='h1'>Chetanya Chopra</Header>
