@@ -15,10 +15,10 @@ import resume from '../../assets/ResumeChet.pdf'
 
 const Resume = props => {
 
-    return <Segment className='section-holder'>
+    return <Segment className='section-holder' style={{fontSize: 16}}>
         <Header as='h1' dividing  textAlign='center'>
             <Header.Content>Resume</Header.Content>
-            <a href={resume} style={styles.resumeDownload} target='_blank' rel='noopener noreferrer'>PDF</a>
+            <a href={resume} style={styles.resumeDownload} target='_blank' rel='noopener noreferrer'><Icon name='file pdf' />PDF</a> 
         </Header>
 
         <PersonalStatement/>

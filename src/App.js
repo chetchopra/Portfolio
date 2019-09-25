@@ -2,7 +2,6 @@ import _ from 'lodash'
 import React, { Component } from 'react'
 import About from './components/About'
 import Resume from './components/resume/Resume'
-import OptionMenu from './components/OptionMenu'
 import SocialAnimated from './components/SocialAnimated'
 import Project from './components/Project'
 
@@ -10,18 +9,16 @@ import Cringe from './assets/cringe.jpg'
 
 import {
   Container,
-  Divider,
-  Dropdown,
+
   Grid,
   Header,
-  Icon,
+
   Image,
-  List,
+
   Menu,
-  Segment,
+
   Visibility,
-  Button,
-  MenuItem
+
 } from 'semantic-ui-react'
 
 import {
@@ -135,53 +132,47 @@ export default class StickyLayout extends Component {
 
       <Router>
       <div>
-        {/* Heads up, style below isn't necessary for correct work of example, simply our docs defines other
-            background color.
-          */}
         <style>
           {`
           html, body {
-            background: #d9d3d2;
+            background: #7c98a1;
           }
         `}
         </style> 
 
-        <Container  style={{ marginTop: '2em' }}>
+        <Container  style={{ marginTop: '3em' }}>
           <Grid>
             <Grid.Column width={4}>
               <Image src={Cringe} size='medium' circular />
             </Grid.Column>
             <Grid.Column width={12}>
-              <Header as='h1'>Chetanya Chopra</Header>
-              <p>
-                {/* This example shows how to use lazy loaded images, a sticky menu, and a simple text
-                container */}
-              </p>
-              <SocialAnimated/>
+              <div style={styles.header}>
+                <Header as='h1' style={styles.nameHeader}>Chetanya Chopra</Header>
+                <p style={styles.quoteHeader}>
+                “The computer was born to solve problems that did not exist before.”
+                — Bill Gates
+                </p>
+                <SocialAnimated/>
+              </div>
             </Grid.Column>
           </Grid>
         </Container>
 
 
 
-        
 
-        {/* Attaching the top menu is a simple operation, we only switch `fixed` prop and add another style if it has
-            gone beyond the scope of visibility
-          */}
         <Visibility
           onBottomPassed={this.stickTopMenu}
           onBottomVisible={this.unStickTopMenu}
           once={false}
           offset={45}
         >
-          <Menu pointing secondary
-            borderless
+          <Menu 
             fixed={menuFixed ? 'top' : undefined}
             style={menuFixed ? fixedMenuStyle : menuStyle}
 
           >
-            <Container text>
+            <Container text  style={styles.navBar}>
               <Menu.Item as={NavLink} to='/about' exact activeClassName='active'>About</Menu.Item>
               <Menu.Item as={NavLink} to='/projects' exact activeClassName='active'>Projects</Menu.Item>
               <Menu.Item as={NavLink} to='/resume' exact activeClassName='active'>Resume</Menu.Item>
@@ -191,10 +182,6 @@ export default class StickyLayout extends Component {
           </Menu>
 
         </Visibility>
-
-
-
-
 
         <Container >
 
@@ -207,10 +194,27 @@ export default class StickyLayout extends Component {
           </Switch>
          
         </Container>
-
         
       </div>
       </Router>
     )
+  }
+}
+
+const styles = {
+  header: {
+    textAlign: 'center',
+    float: 'left',
+    marginTop: '4%'
+  },
+  nameHeader: {
+    fontSize: 50
+  },
+  quoteHeader: {
+    fontSize: 20
+  },
+  navBar: {
+    fontSize: 20, 
+    fontWeight: 'bold'
   }
 }

@@ -9,7 +9,7 @@ import {
 
 const Project = props => {
 
-    return <Segment className='section-holder'>
+    return <Segment className='section-holder'style={{fontSize: 18}}>
         <Header as='h1' dividing icon textAlign='center'>
             <Header.Content>Projects</Header.Content>
         </Header>
