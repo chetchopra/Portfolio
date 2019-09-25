@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a3db6a205f4983ad5473833a1e76fdca",
+    "revision": "6272d2cdaf24f6a86483ae0066ad1914",
     "url": "/index.html"
   },
   {
-    "revision": "bd78aa5616030ab0eeee",
+    "revision": "2b76a6292b91d74bf782",
     "url": "/static/css/2.faaa52d3.chunk.css"
   },
   {
-    "revision": "7f068225492b73024a04",
+    "revision": "332a94ff204519987b50",
     "url": "/static/css/main.34de6062.chunk.css"
   },
   {
-    "revision": "bd78aa5616030ab0eeee",
-    "url": "/static/js/2.7f0a067f.chunk.js"
+    "revision": "2b76a6292b91d74bf782",
+    "url": "/static/js/2.47dde6d5.chunk.js"
   },
   {
-    "revision": "7f068225492b73024a04",
-    "url": "/static/js/main.81918835.chunk.js"
+    "revision": "332a94ff204519987b50",
+    "url": "/static/js/main.711280ef.chunk.js"
   },
   {
     "revision": "3c2210b84b35e0ca614f",
@@ -46,6 +46,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "e8c322de9658cbeb8a774b6624167c2c",
     "url": "/static/media/brand-icons.e8c322de.woff2"
+  },
+  {
+    "revision": "5f03d858a3ea6b7c78f05ba6c4b8edbc",
+    "url": "/static/media/cringe.5f03d858.jpg"
   },
   {
     "revision": "e17cfd6dae9045a5643f8444de3ae358",
