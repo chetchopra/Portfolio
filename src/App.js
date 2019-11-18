@@ -5,6 +5,7 @@ import Resume from './components/resume/Resume'
 import SocialAnimated from './components/SocialAnimated'
 import Project from './components/Project'
 
+//Cringe equals my face
 import Cringe from './assets/cringe.jpg'
 
 import {
